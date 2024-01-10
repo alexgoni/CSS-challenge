@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.poster {
+  width: 40%;
+  height: 70%;
+  background-color: #f4f4f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.poster__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid black;
+}
+
+.poster__header__name {
+  font-size: 60px;
+}
+
+.poster__header--month {
+  font-size: x-large;
+}
+
+.poster__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: xx-small;
+}
+
+.poster__painting {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  height: 70%;
+  gap: 20px;
+}
+
+.poster__painting--circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.poster__painting--circle:nth-child(-n + 3) {
+  background-color: #bbe0f0;
+}
+
+.poster__painting--circle:nth-child(n + 4):nth-child(-n + 6) {
+  background-color: #626365;
+}
+
+.poster__painting--circle:nth-child(n + 7):nth-child(-n + 9) {
+  background-color: #04a466;
+}
